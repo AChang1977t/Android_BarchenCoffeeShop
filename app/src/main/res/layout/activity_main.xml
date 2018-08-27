@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textMultiLine"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/Header_TextView"
+            android:layout_marginBottom="12dp"
+            android:text="Category" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CA_CheckBox"
+                style="@style/Category_TextView"
+                android:text="Caffee Americano" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="decrementA"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity_A_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="incrementA"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/whippedcream_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Wipped cream"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/addchocolate_checkbox"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/whippedcream_checkbox"
+                android:text="Chocolate"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Category_TextView"
+                android:text="Caffee Latte" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="decrementL"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity_L_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="incrementL"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cinnamon_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Cinnamon"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Category_TextView"
+                android:text="Cappuccino" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="decrementC"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity_C_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="incrementC"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Category_TextView"
+                android:text="Caramel Macchiato" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="decrementM"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity_M_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Category_Button"
+                android:onClick="incrementM"
+                android:text="+" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:onClick="submitOrder"
+            android:text="Order"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/Order_Summary_Text_View"
+            style="@style/Header_TextView"
+            android:text="Order Summary" />
+
+    </LinearLayout>
+
+</ScrollView>
